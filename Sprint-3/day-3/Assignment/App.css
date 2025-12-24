@@ -1,0 +1,32 @@
+/* App.css */
+
+/* Reset some default margins */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Wrapper for page content */
+.page-content {
+  padding: 20px;
+  min-height: 80vh;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* General link styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Add some spacing between sections */
+section {
+  margin-bottom: 30px;
+}
