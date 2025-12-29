@@ -1,0 +1,58 @@
+/* this is the critical part for implementing the "3 cards per row" layout using CSS grid or Flexbox. */
+/*src/FleetList.css*/
+
+.fleet-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;                     
+}
+.fleet-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.fleet-card:hover {
+    transform: translateY(-5px);
+}
+.fleet-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.fleet-card p {
+    margin: 10px 0;
+    color: #555;
+}
+.fleet-card .status {
+    font-weight: bold;
+    color: #007BFF;
+}
+.fleet-card .status.active {
+    color: #28a745;
+}
+.fleet-card .status.inactive {
+    color: #dc3545;
+}
+.fleet-card .status.maintenance {
+    color: #ffc107;
+}
+@media (max-width: 900px) {
+    .fleet-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .fleet-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
